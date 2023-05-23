@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alterar opção</title>
+  <link rel="stylesheet" href="pedido.css"/>
+
+  <script>
+    function aceitar() {
+        alert("Vivaaaaa uhulll Opção certa!");
+        window.location.href = "https://www.youtube.com/watch?v=qfz5szNviUY";
+    }
+
+    function alterarPosicao() {
+      var botao = document.getElementById("meuBotao");
+      var novaPosicaoTop = Math.floor(Math.random() * 500);
+      var novaPosicaoLeft = Math.floor(Math.random() * 500);
+
+     
+      botao.style.top = novaPosicaoTop + "px";
+      botao.style.left = novaPosicaoLeft + "px";
+    }
+    
+</script>
+
+</head>
+<body>
+
+<div>
+  <h2>Escolha uma opção:</h2>
+  <button id="meuBotao" onclick="alterarPosicao()" >Nao</button>
+  <button id="sim" onclick="aceitar()">Sim</button>
+</div>
+  
+</body>
+</html>
